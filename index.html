@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stylowanie</title>
+    <style>
+        #typy-ul { background-color: #bbdefb; }
+        #typy-ul li { color: #1565c0; list-style-type: square; }
+        
+        #typy-ol { background-color: #ffe0b2; }
+        #typy-ol li { color: #e65100; list-style-type: upper-roman; }
+
+        #zdjecie { background-color: #ffcdd2; padding-left: 50px; } 
+        #zdjecie li {
+          color: #c62828;
+          list-style-image: url(dog.png)
+        }
+
+        #pozycja { border: 1px dashed #666; width: 350px; }
+        .wewnatrz {
+            list-style-position: inside;
+            color: #43a047;
+            background-color: #c8e6c9;
+        }
+        .zewnatrz {
+            list-style-position: outside;
+            color: #5e35b1;
+            background-color: #ede7f6;
+        }
+
+        #brak { background-color: #f5f5f5; }
+        #brak li {
+          color: #616161;
+          list-style-type: none; 
+          margin-left: -20px; 
+        }
+
+        #skrot { background-color: #b2ebf2; }
+        #skrot li {
+          color: #00838f;
+          list-style: circle outside none;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Lista 1: Typy Punktatorów</h2>
+    <ul id="typy-ul">
+        <li>Punktor: square (list-style-type)</li>
+        <li>Element koloru niebieskiego</li>
+    </ul>
+
+    <ol id="typy-ol">
+        <li>Numeracja: upper-roman</li>
+        <li>Element koloru pomarańczowego</li>
+    </ol>
+
+    <h2>Lista 2: Punktor jako Zdjęcie</h2>
+    <ul id="zdjecie">
+        <li>Element z własną ikoną (list-style-image)</li>
+        <li>< Fajny pies</li>
+    </ul>
+
+    <h2>Lista 3: Pozycja Punktora</h2>
+    <ul id="pozycja">
+        <li class="wewnatrz">Pozycja: INSIDE. Ten tekst zawija się pod znacznikiem ponieważ jest wewnątrz elementu.</li>
+        <li class="zewnatrz">Pozycja: OUTSIDE (domyślnie). Tekst jest wyrównany a znacznik jest poza blokiem tekstu.</li>
+    </ul>
+
+    <h2>Lista 4: Lista Bez Punktora</h2>
+    <ul id="brak">
+        <li>Element listy (list-style-type: none)</li>
+        <li>Punktory usunięte.</li>
+    </ul>
+
+    <h2>Lista 5: Skrócony Zapis list-style</h2>
+    <ul id="skrot">
+        <li>Użyto skrótu: circle outside none</li>
+        <li>Punktor jest wewnątrz znacznika elementu (outside)</li>
+    </ul>
+
+</body>
+</html>
